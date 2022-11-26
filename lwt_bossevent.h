@@ -8,8 +8,8 @@ class CAutoBossEvent : public singleton<CAutoBossEvent>
 		BOSS_EVENT_MP = 41,	
 	};
 	public:
-		void	EkleBunu(LPCHARACTER ch);
-		void	BossSpawnla();
+		void	AddPlayer(LPCHARACTER ch);
+		void	SpawnBoss();
 	private:
 		std::vector<LPCHARACTER> vec_player;
 };
